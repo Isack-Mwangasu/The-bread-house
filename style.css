@@ -1,0 +1,87 @@
+ @font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+/* 2. CORE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Light beige background from the profile  */
+    background-color: #FDF9F3; 
+    /* Deep brown text for a premium look [cite: 109] */
+    color: #3E2723; 
+    line-height: 1.6;
+}
+
+/* 3. NAVIGATION BAR */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 60px; /* Adjust based on your logo shape */
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3E2723;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c59d5f; /* Golden brown accent color */
+}
+
+/* 4. BUTTON STYLE (For later) */
+.btn-primary {
+    background-color: #3E2723;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-block;
+}
