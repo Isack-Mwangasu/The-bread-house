@@ -2,10 +2,10 @@
 
 Official web platform for **The Bread House by Al Ferdous Bakeries**, a Syrian-inspired artisanal bakery dedicated to premium bread craftsmanship.
 
-## 🥖 Project Overview
+## Project Overview
 This project establishes a premium online presence for The Bread House, transitioning from a professional brand showcase to a full e-commerce ordering system. The design emphasizes the bakery's commitment to "time-honoured techniques, skilled hands, and the finest natural ingredients".
 
-## 🏗️ Development Phases
+## Development Phases
 
 ### **Phase 1: Brand Showcase (In Progress)**
 Building a multi-page, mobile-responsive experience to establish the brand and wholesale presence.
@@ -17,14 +17,14 @@ Building a multi-page, mobile-responsive experience to establish the brand and w
 Expansion into a direct-to-consumer online store.
 * **Features**: Online store setup, payment gateway integration, and order management.
 
-## 📦 Product Catalog
+## Product Catalog
 The platform showcases a variety of artisanal products:
 * **Arabic Bread**: Signature market-leading Syrian bread.
 * **Brioche Buns**: Premium glossy buns for retail and wholesale.
 * **Artisanal Loaves**: Rustic breads crafted with long fermentation.
 * [**Pastries**: Specialized frozen croissant dough and gourmet sweets.
 
-## 🤝 Partners & Wholesale
+## Partners & Wholesale
 The Bread House provides reliable supply and tailored contracts to:
 * Restaurants and Cafés.
 * Hotels and Retailers across Nairobi.
