@@ -97,6 +97,107 @@ header {
     left: 0;
 }
 
+
+.hero {
+    position: relative;
+    height: 85vh; /* Takes up most of the screen */
+    background: url('img/artisanal_hand_shaped_bread.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FDF9F3;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 26, 20, 0.5); /* Deep brown tint at 50% opacity */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.hero-tagline {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    display: block;
+    color: #e6d4af; /* Your brand beige */
+}
+
+.hero h1 {
+    font-size: clamp(40px, 8vw, 68px); /* Responsive font size */
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #e6d4af; /* Highlight "Skilled Hands" in brand color */
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-weight: 400;
+}
+
+/* Button Bricks */
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #e6d4af;
+    color: #261a14;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary {
+    border: 2px solid #e6d4af;
+    color: #e6d4af;
+    padding: 13px 33px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.btn-secondary:hover {
+    background-color: #e6d4af;
+    color: #261a14;
+    transform: translateY(-3px);
+}
+
+
+
+
+
 footer {
     background-color: #261a14; 
     color: #e6d4af; 
