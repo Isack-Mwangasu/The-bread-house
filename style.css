@@ -173,3 +173,12 @@ footer {
     font-size: 12px;
     opacity: 0.6;
 }
+.footer-link {
+    color: #e6d4af;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
+}
