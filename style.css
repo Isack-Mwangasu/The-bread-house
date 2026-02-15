@@ -42,7 +42,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%; /* Added more padding for a "premium" feel */
+    padding: 20px 6%; /* Added more padding for a "premium" feel */
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -58,6 +58,9 @@ logo-container {
     width: auto;
     display: block;
 }
+.logo-link {
+    text-decoration: none;
+}
 
 .brand-title {
     color: #e6d4af; /* Using your accurate beige color */
@@ -65,6 +68,7 @@ logo-container {
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 1.5px;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -77,13 +81,23 @@ logo-container {
     text-decoration: none;
     /* Changed to light beige for contrast against the dark brown */
     color: #FDF9F3; 
-    font-size: 14px;
+    font-size: 12.5px;
     font-weight: 600; 
     text-transform: uppercase;
     letter-spacing: 1.5px;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .nav-links a:hover {
     color: #e6d4af; 
+}
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #e6d4af;
+    bottom: -5px;
+    left: 0;
 }
