@@ -196,6 +196,143 @@ header {
 
 
 
+.virtues {
+    padding: 100px 8%;
+    background-color: #e6d4af; /* Your accurate beige */
+    text-align: center;
+}
+
+.section-title span {
+    color: #261a14; /* Your accurate brown */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #261a14;
+    margin-bottom: 60px;
+}
+
+.virtues-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.virtue-card {
+    padding: 40px;
+    background: rgba(38, 26, 20, 0.03); /* Extremely subtle brown tint */
+    border: 1px solid rgba(38, 26, 20, 0.1);
+    transition: all 0.3s ease;
+}
+
+.virtue-card:hover {
+    background: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(38, 26, 20, 0.05);
+}
+
+.virtue-card i {
+    font-size: 40px;
+    color: #261a14;
+    margin-bottom: 20px;
+}
+
+.virtue-card h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.virtue-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+
+
+.products-preview {
+    padding: 100px 8%;
+    background-color: #FDF9F3; /* A lighter shade of your beige for contrast */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    background: #fff;
+    overflow: hidden; /* Keeps the zoom effect inside the card */
+    border: 1px solid rgba(38, 26, 20, 0.05);
+    transition: all 0.4s ease;
+}
+
+.product-img {
+    height: 300px;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-img img {
+    transform: scale(1.1); /* The "Posh" zoom */
+}
+
+.product-info {
+    padding: 30px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #261a14;
+}
+
+.product-info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.link-posh {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #261a14;
+    text-decoration: none;
+    border-bottom: 2px solid #e6d4af;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.link-posh:hover {
+    border-bottom: 2px solid #261a14;
+}
+
+.view-all-container {
+    text-align: center;
+}
+
 
 
 footer {
