@@ -677,6 +677,54 @@ header {
 }
 
 
+
+.product-price {
+    display: block;
+    margin-top: 10px;
+    font-weight: 700;
+    color: #261a14;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.wholesale-card {
+    background: #261a14;
+    color: #e6d4af;
+    padding: 60px;
+    border-radius: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.form-text { flex: 1; }
+.posh-form { flex: 1.2; display: flex; flex-direction: column; gap: 15px; }
+
+.posh-form input, .posh-form textarea {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(230, 212, 175, 0.3);
+    background: transparent;
+    color: #e6d4af;
+}
+
+.btn-primary {
+    background: #e6d4af;
+    color: #261a14;
+    padding: 18px;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover { background: #c59d5f; }
+
+
+
+
 footer {
     background-color: #261a14; 
     color: #e6d4af; 
