@@ -581,6 +581,99 @@ header {
 }
 
 
+/* Products Page Hero */
+.products-hero {
+    padding: 120px 8% 60px; /* Extra top padding to clear the fixed navbar */
+    background-color: #FDF9F3; /* Soft brand beige */
+    text-align: center;
+    border-bottom: 1px solid rgba(38, 26, 20, 0.05);
+}
+
+.products-hero span {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #c59d5f; /* Wheat/Gold accent color */
+    font-size: 13px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.products-hero h1 {
+    font-size: clamp(36px, 6vw, 52px);
+    color: #261a14; /* Deep brand brown */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.products-hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #4a3728;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.product-gallery {
+    padding: 80px 8%;
+    background-color: #fff;
+}
+
+.product-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 60px; /* Large gaps for a "posh" editorial feel */
+}
+
+.product-item {
+    text-align: left;
+}
+
+.product-img-box {
+    width: 100%;
+    aspect-ratio: 4 / 5; /* Taller than square, very common in food magazines */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.product-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.product-item:hover img {
+    transform: scale(1.08); /* Sophisticated slow zoom */
+}
+
+.product-details h3 {
+    font-size: 24px;
+    color: #261a14;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: #4a3728;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.product-tag {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #c59d5f; /* Wheat/Gold accent */
+    border: 1px solid #c59d5f;
+    padding: 5px 12px;
+    display: inline-block;
+}
+
+
 footer {
     background-color: #261a14; 
     color: #e6d4af; 
