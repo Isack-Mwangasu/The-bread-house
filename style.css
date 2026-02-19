@@ -622,8 +622,11 @@ header {
 
 .product-category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 60px; /* Large gaps for a "posh" editorial feel */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Increased vertical gap to 100px so the Loaf on row 2 doesn't touch row 1 */
+    gap: 100px 40px; 
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .product-item {
