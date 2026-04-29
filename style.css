@@ -31,6 +31,11 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
 
 header {
     background-color: #261a14; 
@@ -616,29 +621,39 @@ header {
 }
 
 .product-gallery {
-    padding: 80px 8%;
+    padding: 90px 0;
     background-color: #fff;
+}
+
+.catering-gallery {
+    padding: 90px 0;
+    background-color: #FDF9F3;
 }
 
 .product-category-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    /* Increased vertical gap to 100px so the Loaf on row 2 doesn't touch row 1 */
-    gap: 100px 40px; 
-    max-width: 1400px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
 }
 
 .product-item {
     text-align: left;
+    background: #fff;
+    border: 1px solid rgba(38, 26, 20, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(38, 26, 20, 0.10);
 }
 
 .product-img-box {
     width: 100%;
-    aspect-ratio: 4 / 5; /* Taller than square, very common in food magazines */
+    aspect-ratio: 4 / 3;
     overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 25px;
 }
 
 .product-img-box img {
@@ -649,20 +664,24 @@ header {
 }
 
 .product-item:hover img {
-    transform: scale(1.08); /* Sophisticated slow zoom */
+    transform: scale(1.08);
+}
+
+.product-details {
+    padding: 24px;
 }
 
 .product-details h3 {
-    font-size: 24px;
+    font-size: 22px;
     color: #261a14;
     margin-bottom: 10px;
 }
 
 .product-details p {
-    font-size: 16px;
+    font-size: 15px;
     color: #4a3728;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .product-tag {
@@ -676,13 +695,38 @@ header {
     display: inline-block;
 }
 
+@media (max-width: 992px) {
+    .products-hero {
+        padding: 95px 0 50px;
+    }
+
+    .product-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products-hero p {
+        font-size: 16px;
+    }
+
+    .product-category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wholesale-card {
+        flex-direction: column;
+        padding: 30px;
+    }
+}
+
 
 
 /* Catering Section Header */
 .section-header {
     text-align: center;
-    margin-bottom: 60px;
-    padding-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 0;
 }
 
 .section-header span {
@@ -715,11 +759,16 @@ header {
 }
 .product-price {
     display: block;
-    margin-top: 10px;
+    margin-top: 12px;
     font-weight: 700;
     color: #261a14;
     font-size: 14px;
     letter-spacing: 1px;
+}
+
+.wholesale-inquiry {
+    padding: 90px 0;
+    background-color: #fff;
 }
 
 .wholesale-card {
@@ -730,7 +779,7 @@ header {
     display: flex;
     gap: 40px;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 0;
 }
 
 .form-text { flex: 1; }
