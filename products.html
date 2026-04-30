@@ -366,31 +366,6 @@
   </div>
 </footer>
 
-<script>
-  // Hamburger
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobileNav');
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    mobileNav.classList.toggle('open');
-  });
-
-  // Tab switching
-  const tabs    = document.querySelectorAll('.tab-btn');
-  const sections = { breads: document.getElementById('breads'), sweets: document.getElementById('sweets'), catering: document.getElementById('catering') };
-
-  tabs.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      btn.classList.add('active');
-      const target = btn.dataset.target;
-      Object.entries(sections).forEach(([key, el]) => {
-        el.style.display = key === target ? 'block' : 'none';
-      });
-      // Scroll to section
-      document.querySelector('.products-tabs').scrollIntoView({ behavior:'smooth', block:'start' });
-    });
-  });
-</script>
+<script src="main.js"></script>
 </body>
 </html>
