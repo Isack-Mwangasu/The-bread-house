@@ -1,185 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Bread House | Products</title>
-    <link rel="icon" type="image/png" href="img/main-logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bread House | Products</title>
+  <link rel="icon" type="image/png" href="img/main-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo-link">
-            <div class="logo-container">
-                <img src="img/main-logo.png" alt="The Bread House Logo">
-                <span class="brand-title">The Bread House</span>
-            </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="story.html">Our Story</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
-                <li><a href="wholesale.html">Wholesale</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+      <div class="logo-container">
+        <img src="img/main-logo.png" alt="The Bread House Logo">
+        <span class="brand-title">The Bread House</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="wholesale.html">Wholesale</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="products.html">Products</a>
+    <a href="wholesale.html">Wholesale</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
- <main>
-    <section class="products-hero">
-        <div class="container">
-             <span>The Collection</span>
-             <h1>Artisanal Breads & Catering</h1>
-             <p>From our daily hearth to your special events—freshly baked in Nairobi.</p>
-        </div>
-    </section>
+<main>
 
-    <section class="product-gallery">
-        <div class="container">
-            <div class="section-header">
-                <span>The Bread Basket</span>
-                <h2>Daily Essentials</h2>
-            </div>
-            <div class="product-category-grid">
-                <div class="product-item">
-                    <div class="product-img-box"><img src="img/arabic_bread.jpg" alt="Arabic Bread"></div>
-                    <div class="product-details">
-                        <h3>Authentic Arabic Bread</h3>
-                        <p>Our signature Syrian-style pita, perfect for dips and wraps.</p>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-img-box"><img src="img/syrian-inspired-rustic-loaf.jpg" alt="Sourdough Bread"></div>
-                    <div class="product-details">
-                        <h3>Artisanal Sourdough</h3>
-                        <p>A crusty, tangier loaf developed through a 24-hour fermentation process.</p>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-img-box"><img src="img/loaf.jpg" alt="Artisanal Loaf"></div>
-                    <div class="product-details">
-                        <h3>Premium Artisanal Loaf</h3>
-                        <p>Our classic daily loaf with a golden, traditional crust.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="products-hero">
+  <span class="label">The Collection</span>
+  <h1>Artisanal Breads,<br>Catering &amp; Sweets</h1>
+  <p>From our daily hearth to your special events — freshly baked in Nairobi with Syrian-inspired craft.</p>
+</section>
 
-    <section class="catering-gallery">
-        <div class="container">
-            <div class="section-header">
-                <span>Premium Catering</span>
-                <h2>Platters & Specialty Bites</h2>
-            </div>
-            <div class="product-category-grid">
-                <div class="product-item">
-                    <div class="product-img-box"><img src="img/Luxury-savoury-platter.jpg" alt="Luxury Platter"></div>
-                    <div class="product-details">
-                        <h3>Luxury Savoury Platter</h3>
-                        <p>Mix of sliders, croissants, and puff bites with fruit decoration.</p>
-                        <span class="product-price">8,000 – 10,000 KSh | Serves 20–30</span>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-img-box"><img src="img/Assorted-mini-sliders-platter.jpg" alt="Mini Sliders"></div>
-                    <div class="product-details">
-                        <h3>Assorted Mini Sliders</h3>
-                        <p>Chicken, beef, veggie, and cheese with special sauces.</p>
-                        <span class="product-price">5,000 – 6,500 KSh | 40–50 Pieces</span>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-img-box"><img src="img/Gourmet-coloured-buns.jpg" alt="Coloured Buns"></div>
-                    <div class="product-details">
-                        <h3>Gourmet Coloured Buns</h3>
-                        <p>Red, yellow, and black sesame buns with premium fillings.</p>
-                        <span class="product-price">4,000 – 7,000 KSh | 35–45 Pieces</span>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-img-box"><img src="img/Stuffed-mini-croissants.jpg" alt="Mini Croissants"></div>
-                    <div class="product-details">
-                        <h3>Stuffed Mini Croissants</h3>
-                        <p>Cheese, chicken, pesto & tomato, and veggie fillings.</p>
-                        <span class="product-price">5,500 – 7,000 KSh | 50–60 Pieces</span>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-img-box"><img src="img/Savoury-puff-pastry-bites.jpg" alt="Puff Pastry"></div>
-                    <div class="product-details">
-                        <h3>Savoury Puff Pastry Bites</h3>
-                        <p>Hearts, rolls, and cups with tomato, olives, and cheese.</p>
-                        <span class="product-price">6,000 – 7,000 KSh | 60–80 Pieces</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- TABS -->
+<div class="products-tabs">
+  <div class="tabs-inner">
+    <button class="tab-btn active" data-target="breads">Breads &amp; Goods</button>
+    <button class="tab-btn" data-target="sweets">Sweets &amp; Desserts</button>
+    <button class="tab-btn" data-target="catering">Catering Platters</button>
+  </div>
+</div>
 
-    <section class="wholesale-inquiry">
-        <div class="container">
-            <div class="wholesale-card">
-                <div class="form-text">
-                    <h2>Wholesale Inquiry</h2>
-                    <p>Provide guest count, event type, and any preferences. Vegetarian options available.</p>
-                </div>
-                <form class="posh-form">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="number" placeholder="Guest Count" required>
-                    <input type="text" placeholder="Event Type" required>
-                    <textarea placeholder="Your preferences..." rows="4"></textarea>
-                    <button type="submit" class="btn-primary">Request a Quote</button>
-                </form>
-            </div>
+<!-- ══ BREADS & GOODS ══ -->
+<section class="product-section" id="breads">
+  <div class="container">
+    <div class="section-intro">
+      <span class="label">The Bread Basket</span>
+      <h2 class="section-heading">Breads &amp; Baked Goods</h2>
+      <div class="divider center"></div>
+      <p style="color:var(--muted); max-width:520px; margin:0 auto; font-size:15px; line-height:1.75;">All breads are baked fresh daily using traditional techniques and the finest natural ingredients.</p>
+    </div>
+    <div class="product-category-grid">
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/arabic_bread.jpg" alt="Arabic Bread"></div>
+        <div class="product-details">
+          <h3>Arabic Bread</h3>
+          <p>Soft, thin pocket pita for wraps and dipping. Our signature Syrian-style bread — the best in the market.</p>
+          <span class="product-tag">Signature</span>
         </div>
-    </section>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/brioche_buns.jpg" alt="Brioche Burger Bun"></div>
+        <div class="product-details">
+          <h3>Brioche Burger Bun</h3>
+          <p>Enriched, golden, and soft — the premium choice for gourmet burgers and sliders.</p>
+          <span class="product-tag">Bestseller</span>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/loaf.jpg" alt="Soft White Loaf"></div>
+        <div class="product-details">
+          <h3>Soft White Loaf</h3>
+          <p>Pre-sliced, fluffy bread for everyday sandwiches. Baked fresh with a delicate, soft crumb.</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/syrian-inspired-rustic-loaf.jpg" alt="French Baguette"></div>
+        <div class="product-details">
+          <h3>French Baguette</h3>
+          <p>Traditional crisp crust with a light, airy interior — baked to perfection every morning.</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/loaf.jpg" alt="Italian Ciabatta"></div>
+        <div class="product-details">
+          <h3>Italian Ciabatta</h3>
+          <p>Rustic olive-oil loaf with a chewy, open crumb. Perfect for sandwiches and sharing boards.</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/loaf.jpg" alt="Herbed Focaccia"></div>
+        <div class="product-details">
+          <h3>Herbed Focaccia</h3>
+          <p>Topped with sea salt, olive oil, and fresh herbs. Deeply aromatic with a pillowy crumb.</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/frozen_croissant_dough.jpg" alt="Hot Dog Roll"></div>
+        <div class="product-details">
+          <h3>Hot Dog Roll</h3>
+          <p>Classic soft-crumb rolls with a light sweetness. Ideal for cafés and food service operators.</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/frozen_croissant_dough.jpg" alt="Panini Roll"></div>
+        <div class="product-details">
+          <h3>Panini Roll</h3>
+          <p>Firm, flat bread designed for high-heat grilling. Holds its structure for the perfect panini.</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/premium-sesame-croissants.jpg" alt="Chocolate Viennoiserie"></div>
+        <div class="product-details">
+          <h3>Chocolate Viennoiserie</h3>
+          <p>Flaky, buttery pastry filled with rich dark chocolate. A true indulgence from the oven.</p>
+          <span class="product-tag">New</span>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/frozen_croissant_dough.jpg" alt="Frozen Croissant Dough"></div>
+        <div class="product-details">
+          <h3>Frozen Croissant Dough</h3>
+          <p>Premium ready-to-bake croissant dough for restaurants and cafés. Consistent results every time.</p>
+          <span class="product-tag">Wholesale</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ SWEETS & DESSERTS ══ -->
+<section class="product-section" id="sweets" style="display:none;">
+  <div class="container">
+    <div class="section-intro">
+      <span class="label">The Sweet Side</span>
+      <h2 class="section-heading">Sweets &amp; Desserts</h2>
+      <div class="divider center"></div>
+      <p style="color:var(--muted); max-width:520px; margin:0 auto; font-size:15px; line-height:1.75;">From classic Middle Eastern sweets to European patisserie — crafted with care for every occasion.</p>
+    </div>
+    <div class="product-category-grid">
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/arabic_bread.jpg" alt="Traditional Kunafa"></div>
+        <div class="product-details">
+          <h3>Traditional Kunafa</h3>
+          <p>Crisp shredded phyllo with cream and aromatic syrup. A Syrian classic done with full authenticity.</p>
+          <span class="product-tag">Heritage</span>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/arabic_bread.jpg" alt="Baklawa"></div>
+        <div class="product-details">
+          <h3>Baklawa</h3>
+          <p>Honey-soaked phyllo layers with crushed pistachios. Rich, fragrant, and irresistibly layered.</p>
+          <span class="product-tag">Heritage</span>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/arabic_bread.jpg" alt="Basbousa"></div>
+        <div class="product-details">
+          <h3>Basbousa</h3>
+          <p>Moist semolina cake infused with coconut and almonds. A beloved Middle Eastern staple.</p>
+          <span class="product-tag">Heritage</span>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/Luxury-savoury-platter.jpg" alt="Cheesecake Slices"></div>
+        <div class="product-details">
+          <h3>Cheesecake Slices</h3>
+          <p>Creamy no-bake filling on a buttery digestive crust with fruit topping. Elegant and indulgent.</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/Gourmet-coloured-buns.jpg" alt="Classic Cake Slices"></div>
+        <div class="product-details">
+          <h3>Classic Cake Slices</h3>
+          <p>Individual portions of Chocolate, Red Velvet, or Vanilla. Perfect for catering and events.</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/Luxury-savoury-platter.jpg" alt="Celebration Cakes"></div>
+        <div class="product-details">
+          <h3>Celebration Cakes</h3>
+          <p>Custom whole cakes for birthdays and special events. Contact us to discuss your requirements.</p>
+          <span class="product-tag">Custom Order</span>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/Stuffed-mini-croissants.jpg" alt="Assorted Soirée"></div>
+        <div class="product-details">
+          <h3>Assorted Soirée</h3>
+          <p>Bite-sized éclairs and fruit tarts for elegant events. A showstopper on any dessert table.</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/Savoury-puff-pastry-bites.jpg" alt="Petit Fours"></div>
+        <div class="product-details">
+          <h3>Petit Fours</h3>
+          <p>Glazed mini-layer cakes with ganache and preserves. Refined, bite-sized, and beautifully finished.</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/premium-sesame-croissants.jpg" alt="French Sablé"></div>
+        <div class="product-details">
+          <h3>French Sablé</h3>
+          <p>Premium butter shortbread with a hint of vanilla. Crisp, buttery, and melt-in-the-mouth.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CATERING PLATTERS ══ -->
+<section class="product-section" id="catering" style="display:none;">
+  <div class="container">
+    <div class="section-intro">
+      <span class="label">Premium Catering</span>
+      <h2 class="section-heading">Platters &amp; Specialty Bites</h2>
+      <div class="divider center"></div>
+      <p style="color:var(--muted); max-width:580px; margin:0 auto; font-size:15px; line-height:1.75;">All items are freshly baked on the day of delivery. Vegetarian options available. Delivery across Nairobi — fees based on location.</p>
+    </div>
+    <div class="product-category-grid">
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/Luxury-savoury-platter.jpg" alt="Luxury Savoury Platter"></div>
+        <div class="product-details">
+          <h3>Luxury Savoury Platter</h3>
+          <p>Mix of sliders, croissants, and puff bites with fruit and herb decoration. A stunning centrepiece for any event.</p>
+          <span class="product-price">8,000 – 10,000 KSh &nbsp;|&nbsp; Serves 20–30</span>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/Assorted-mini-sliders-platter.jpg" alt="Mini Sliders Platter"></div>
+        <div class="product-details">
+          <h3>Assorted Mini Sliders</h3>
+          <p>Chicken, beef, veggie, and cheese with special sauces. A crowd favourite for corporate events and parties.</p>
+          <span class="product-price">5,000 – 6,500 KSh &nbsp;|&nbsp; 40–50 Pieces</span>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/Gourmet-coloured-buns.jpg" alt="Gourmet Coloured Buns"></div>
+        <div class="product-details">
+          <h3>Gourmet Coloured Buns</h3>
+          <p>Red, yellow, and black sesame buns with beef, chicken, or salad fillings. Visually striking and delicious.</p>
+          <span class="product-price">4,000 – 7,000 KSh &nbsp;|&nbsp; 35–45 Pieces</span>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/Stuffed-mini-croissants.jpg" alt="Stuffed Mini Croissants"></div>
+        <div class="product-details">
+          <h3>Stuffed Mini Croissants</h3>
+          <p>Cheese, chicken, pesto &amp; tomato, and veggie fillings. Buttery, flaky, and endlessly satisfying.</p>
+          <span class="product-price">5,500 – 7,000 KSh &nbsp;|&nbsp; 50–60 Pieces</span>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-img-box"><img src="img/Savoury-puff-pastry-bites.jpg" alt="Savoury Puff Pastry Bites"></div>
+        <div class="product-details">
+          <h3>Savoury Puff Pastry Bites</h3>
+          <p>Hearts, rolls, and cups with tomato, olives, cheese, and pesto. Light, golden, and full of flavour.</p>
+          <span class="product-price">6,000 – 7,000 KSh &nbsp;|&nbsp; 60–80 Pieces</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CATERING QUOTE CTA -->
+<section class="catering-cta">
+  <div class="catering-cta-inner">
+    <div class="cta-text">
+      <span class="label">Request a Quote</span>
+      <h2>Planning an Event?</h2>
+      <p>Tell us your guest count, event type, and any preferences. We'll put together the perfect spread — vegetarian options always available.</p>
+    </div>
+    <form class="posh-form" onsubmit="return false;">
+      <input type="text" placeholder="Full Name" required>
+      <input type="number" placeholder="Guest Count" required>
+      <input type="text" placeholder="Event Type (e.g. Corporate, Wedding)" required>
+      <input type="tel" placeholder="Phone Number">
+      <textarea placeholder="Preferred items or dietary requirements..." rows="4"></textarea>
+      <button type="submit" class="btn-primary">Send Request</button>
+    </form>
+  </div>
+</section>
+
 </main>
 
 <footer>
-    <div class="footer-container">
-        <div class="footer-brand">
-            <a href="index.html" class="logo-link">
-                <div class="logo-container">
-                    <img src="img/main-logo.png" alt="The Bread House Logo">
-                    <span class="brand-title">The Bread House</span>
-                </div>
-            </a>
-            <p>Syrian-inspired artisanal bakery dedicated to crafting premium bread.</p>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <img src="img/main-logo.png" alt="The Bread House Logo">
+          <span class="brand-title">The Bread House</span>
         </div>
-
-       <div class="footer-right-group">
-            <div class="footer-links">
-                <h4>The Bakery</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="story.html">Our Story</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="wholesale.html">Wholesale</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-
-
-        <div class="footer-contact">
-                <h4>Inquiries</h4>
-                <p><a href="mailto:alferdousbakeries@gmail.com" class="footer-link">alferdousbakeries@gmail.com</a></p>
-                <p><a href="tel:+254711254000" class="footer-link">+254 711 254 000</a></p>
-                
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/254711254000" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                </div>
-        </div>
-</div>
+      </a>
+      <p>Syrian-inspired artisanal bakery dedicated to crafting premium bread in the heart of Nairobi.</p>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 The Bread House by Al Ferdous Bakeries. All Rights Reserved.</p>
+    <div class="footer-col">
+      <h4>The Bakery</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wholesale.html">Wholesale</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </div>
+    <div class="footer-col">
+      <h4>Inquiries</h4>
+      <div class="footer-contact-item">
+        <a href="mailto:albreadhouse@gmail.com">albreadhouse@gmail.com</a>
+        <a href="tel:+254701143494">+254 701 143 494</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/254701143494" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 The Bread House by Al Ferdous Bakeries. All Rights Reserved.</p>
+  </div>
 </footer>
+
+<script>
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+  });
+
+  // Tab switching
+  const tabs    = document.querySelectorAll('.tab-btn');
+  const sections = { breads: document.getElementById('breads'), sweets: document.getElementById('sweets'), catering: document.getElementById('catering') };
+
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      const target = btn.dataset.target;
+      Object.entries(sections).forEach(([key, el]) => {
+        el.style.display = key === target ? 'block' : 'none';
+      });
+      // Scroll to section
+      document.querySelector('.products-tabs').scrollIntoView({ behavior:'smooth', block:'start' });
+    });
+  });
+</script>
 </body>
 </html>
