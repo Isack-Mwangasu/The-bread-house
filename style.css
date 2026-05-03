@@ -809,11 +809,14 @@ header {
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
+/* Sweets: fixed 3-column grid → 9 products = 3 rows × 3 columns */
+#sweets .product-category-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
 
-/* Sweets & Catering sections keep auto-fill since they have fewer items */
-#sweets .product-category-grid,
+/* Catering keeps auto-fill */
 #catering .product-category-grid {
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .product-item {
@@ -828,7 +831,7 @@ header {
 
 .product-img-box {
   width:100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 3/3;
   overflow:hidden;
 }
 .product-img-box img {
@@ -1481,6 +1484,11 @@ footer {
 
   /* Breads grid: 2 columns on small mobile */
   #breads .product-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Sweets grid: 2 columns on small mobile */
+  #sweets .product-category-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
