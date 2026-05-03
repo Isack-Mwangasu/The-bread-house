@@ -806,8 +806,14 @@ header {
 
 .product-category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
-  gap: 24px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* Sweets & Catering sections keep auto-fill since they have fewer items */
+#sweets .product-category-grid,
+#catering .product-category-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 
 .product-item {
@@ -822,7 +828,7 @@ header {
 
 .product-img-box {
   width:100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 3/2;
   overflow:hidden;
 }
 .product-img-box img {
@@ -833,20 +839,20 @@ header {
 .product-item:hover .product-img-box img { transform:scale(1.08); }
 
 .product-details {
-  padding: 24px 24px 28px;
+  padding: 16px 16px 20px;
 }
 .product-details h3 {
   font-family: var(--display);
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--brown);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .product-details p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--muted);
-  line-height: 1.7;
-  margin-bottom: 10px;
+  line-height: 1.65;
+  margin-bottom: 8px;
 }
 .product-price {
   display: inline-block;
@@ -1436,6 +1442,11 @@ footer {
   .mv-grid             { grid-template-columns:1fr; }
   .footer-container    { grid-template-columns:1fr 1fr; }
   .footer-brand        { grid-column:1/-1; }
+
+  /* Breads grid: 3 columns on tablet (fits nicely) */
+  #breads .product-category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1467,4 +1478,9 @@ footer {
   .team-card  { flex: 0 1 100%; }
   .partner-grid { grid-template-columns:1fr; }
   .process-steps { grid-template-columns:1fr; }
+
+  /* Breads grid: 2 columns on small mobile */
+  #breads .product-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
