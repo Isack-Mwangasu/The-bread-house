@@ -1,171 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Bread House | Our Story</title>
-    <link rel="icon" type="image/png" href="img/main-logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bread House | Our Story</title>
+  <link rel="icon" type="image/png" href="img/main-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo-link">
-            <div class="logo-container">
-                <img src="img/main-logo.png" alt="The Bread House Logo">
-                <span class="brand-title">The Bread House</span>
-            </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="story.html" class="active">Our Story</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="wholesale.html">Wholesale</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+      <div class="logo-container">
+        <img src="img/main-logo.png" alt="The Bread House Logo">
+        <span class="brand-title">The Bread House</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html" class="active">Our Story</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="wholesale.html">Wholesale</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="products.html">Products</a>
+    <a href="wholesale.html">Wholesale</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-    <main>
-       <main>
-    <section class="story-hero">
-        <div class="container">
-            <span>Our Heritage</span>
-            <h1>From Syria to Nairobi</h1>
-            <p>Bringing generations of artisanal baking expertise to the heart of Kenya.</p>
-        </div>
-    </section>
+<main>
 
-    <section class="story-content">
-        <div class="container">
-            <div class="story-grid">
-                <div class="story-text">
-                    <h2>Traditional Techniques, Modern Passion</h2>
-                    <p>At The Bread House, we believe that exceptional bread comes from patience. Our journey is rooted in traditional Syrian techniques, where long fermentation and skilled hand-shaping are not just steps, but a way of life.</p>
-                    <p>Since establishing Al Ferdous Bakeries, our mission has been to provide premium, natural bread to the people of Nairobi, ensuring every loaf is free from artificial additives.</p>
-                </div>
-                <div class="story-image">
-                    <img src="img/premium-sesame-croissants.jpg" alt="Our Artisan Packaging">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="team-section">
-    <div class="container">
-        <div class="section-title">
-            <span>The Artisans</span>
-            <h2>The Hands Behind the Bread</h2>
-        </div>
-        
-        <div class="team-grid">
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="img/hassan.jpg" alt="Hassan">
-                </div>
-                <h3>Hassan</h3>
-                <span class="role">General Manager</span>
-                <p>Driving the strategic vision and ensuring our Syrian heritage remains at the heart of every loaf.</p>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="img/ali.jpg" alt="Ali">
-                </div>
-                <h3>Ali</h3>
-                <span class="role">CFO</span>
-                <p>Managing the financial health and sustainable growth of Al Ferdous Bakeries across the region.</p>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="img/claire.jpg" alt="Claire">
-                </div>
-                <h3>Claire</h3>
-                <span class="role">Marketing Manager</span>
-                <p>Crafting the brand's voice and connecting our artisanal story with bread lovers in Nairobi.</p>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="img/zilal.jpg" alt="Zilal">
-                </div>
-                <h3>Zilal</h3>
-                <span class="role">Operations Manager</span>
-                <p>Overseeing the daily rhythm of production to guarantee consistent, premium quality.</p>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="img/sally.jpg" alt="Sally">
-                </div>
-                <h3>Sally</h3>
-                <span class="role">Creative</span>
-                <p>Curating the visual identity and aesthetic details that define The Bread House experience.</p>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="img/anand.jpg" alt="Anand">
-                </div>
-                <h3>Anand</h3>
-                <span class="role">Head of Sales</span>
-                <p>Building strong partnerships with Nairobi’s top restaurants, hotels, and retail outlets.</p>
-            </div>
-        </div>
-    </div>
+<!-- HERO -->
+<section class="page-hero">
+  <span class="label">Our Heritage</span>
+  <h1>From Syria<br><em style="font-style:italic; color:var(--gold)">to Nairobi</em></h1>
+  <p>Bringing generations of artisanal baking expertise to the heart of Kenya — one loaf at a time.</p>
 </section>
 
+<!-- STORY CONTENT -->
+<section class="story-content">
+  <div class="story-grid">
+    <div class="story-text">
+      <span class="label">Who We Are</span>
+      <h2 class="section-heading" style="font-size:clamp(32px,4vw,44px);">Traditional Techniques,<br>Modern Passion</h2>
+      <div class="divider"></div>
+      <p>At The Bread House, we believe exceptional bread comes from time-honoured techniques, skilled hands, and the finest natural ingredients. Our artisans blend generations of expertise with methods like long fermentation and hand-shaping to create breads with deep character, aroma, and authenticity.</p>
+      <p>Since establishing Al Ferdous Bakeries, our mission has been to provide premium, natural bread to the people of Nairobi — ensuring every loaf is free from artificial additives and crafted with cultural pride.</p>
+      <p>This commitment to craft is why our Arabic Bread stands as one of the best in the market, trusted by restaurants, cafés, hotels, and retailers seeking quality and cultural richness.</p>
+    </div>
+    <div class="story-image">
+      <img src="img/premium-sesame-croissants.jpg" alt="Our Artisan Packaging">
+    </div>
+  </div>
+</section>
 
+<!-- MISSION & VISION -->
+<section class="mission-vision">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:20px;">
+      <span class="label">What Drives Us</span>
+      <h2 class="section-heading">Mission &amp; Vision</h2>
+      <div class="divider center"></div>
+    </div>
+    <div class="mv-grid">
+      <div class="mv-card">
+        <span class="mv-label">Our Mission</span>
+        <h3>Craft with Purpose</h3>
+        <p>To craft exceptional breads and doughs that honour Syrian culinary tradition while embracing innovation — delivering fresh, premium-quality products that elevate the kitchens, menus, and experiences of our partners across Kenya and beyond.</p>
+      </div>
+      <div class="mv-card">
+        <span class="mv-label">Our Vision</span>
+        <h3>Lead the Region</h3>
+        <p>To become Kenya's leading Middle Eastern–inspired bakery and expand regionally as the benchmark for culturally rich, premium bread craftsmanship — a name synonymous with quality and heritage.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- TEAM -->
+<section class="team-section">
+  <div class="container">
+    <span class="label" style="color:var(--gold);">The Artisans</span>
+    <h2 class="section-heading light" style="margin-top:10px;">The Hands Behind the Bread</h2>
+    <div class="divider center" style="background:var(--gold);"></div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-img">
+          <img src="img/hassan.jpg" alt="Hassan">
+        </div>
+        <h3>Hassan</h3>
+        <span class="role">General Manager</span>
+        <p>Driving the strategic vision and ensuring our Syrian heritage remains at the heart of every loaf.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-img">
+          <img src="img/ali.jpg" alt="Ali">
+        </div>
+        <h3>Ali</h3>
+        <span class="role">CFO</span>
+        <p>Managing the financial health and sustainable growth of Al Ferdous Bakeries across the region.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-img">
+          <img src="img/claire.jpg" alt="Claire">
+        </div>
+        <h3>Claire</h3>
+        <span class="role">Marketing Manager</span>
+        <p>Crafting the brand's voice and connecting our artisanal story with bread lovers in Nairobi.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-img">
+          <img src="img/zilal.jpg" alt="Zilal">
+        </div>
+        <h3>Zilal</h3>
+        <span class="role">Operations Manager</span>
+        <p>Overseeing the daily rhythm of production to guarantee consistent, premium quality.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-img">
+          <img src="img/sally.jpg" alt="Sally">
+        </div>
+        <h3>Sally</h3>
+        <span class="role">Creative</span>
+        <p>Curating the visual identity and aesthetic details that define The Bread House experience.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-img">
+          <img src="img/anand.jpg" alt="Anand">
+        </div>
+        <h3>Anand</h3>
+        <span class="role">Head of Sales</span>
+        <p>Building strong partnerships with Nairobi's top restaurants, hotels, and retail outlets.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 </main>
-    </main>
 
 <footer>
-    <div class="footer-container">
-        <div class="footer-brand">
-            <a href="index.html" class="logo-link">
-                <div class="logo-container">
-                    <img src="img/main-logo.png" alt="The Bread House Logo">
-                    <span class="brand-title">The Bread House</span>
-                </div>
-            </a>
-            <p>Syrian-inspired artisanal bakery dedicated to crafting premium bread.</p>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <img src="img/main-logo.png" alt="The Bread House Logo">
+          <span class="brand-title">The Bread House</span>
         </div>
-
-       <div class="footer-right-group">
-            <div class="footer-links">
-                <h4>The Bakery</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="story.html">Our Story</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="wholesale.html">Wholesale</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-
-
-        <div class="footer-contact">
-                <h4>Inquiries</h4>
-                <p><a href="mailto:alferdousbakeries@gmail.com" class="footer-link">alferdousbakeries@gmail.com</a></p>
-                <p><a href="tel:+254711254000" class="footer-link">+254 711 254 000</a></p>
-                
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/254711254000" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                </div>
-        </div>
-</div>
+      </a>
+      <p>Syrian-inspired artisanal bakery dedicated to crafting premium bread in the heart of Nairobi.</p>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 The Bread House by Al Ferdous Bakeries. All Rights Reserved.</p>
+    <div class="footer-col">
+      <h4>The Bakery</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wholesale.html">Wholesale</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </div>
+    <div class="footer-col">
+      <h4>Inquiries</h4>
+      <div class="footer-contact-item">
+        <a href="mailto:albreadhouse@gmail.com">albreadhouse@gmail.com</a>
+        <a href="tel:+254701143494">+254 701 143 494</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/254701143494" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 The Bread House by Al Ferdous Bakeries. All Rights Reserved.</p>
+  </div>
 </footer>
+
+<script src="main.js"></script>
 </body>
 </html>

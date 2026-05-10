@@ -1,191 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Bread House | Syrian-Inspired Artisanal Bakery</title>
-    <link rel="icon" type="image/png" href="img/main-logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bread House | Syrian-Inspired Artisanal Bakery</title>
+  <link rel="icon" type="image/png" href="img/main-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo-link">
-            <div class="logo-container">
-                <img src="img/main-logo.png" alt="The Bread House Logo">
-                <span class="brand-title">The Bread House</span>
-            </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="story.html">Our Story</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="wholesale.html">Wholesale</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- NAV -->
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+      <div class="logo-container">
+        <img src="img/main-logo.png" alt="The Bread House Logo">
+        <span class="brand-title">The Bread House</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="wholesale.html">Wholesale</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="products.html">Products</a>
+    <a href="wholesale.html">Wholesale</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
 <main>
+
+<!-- HERO -->
 <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <span class="hero-tagline">Time-Honoured Syrian Tradition</span>
-        <h1>Crafting Bread with <br><span>Skilled Hands</span></h1>
-        <p>Exceptional bread comes from generations of expertise, long fermentation, and the finest natural ingredients.</p>
-        <div class="hero-btns">
-            <a href="products.html" class="btn-primary">Explore Our Breads</a>
-            <a href="wholesale.html" class="btn-secondary">Wholesale Inquiry</a>
-        </div>
+  <div class="hero-content">
+    <span class="hero-eyebrow fade-up">Time-Honoured Syrian Tradition</span>
+    <h1 class="fade-up fade-up-d1">Crafting Bread<br>with <em>Skilled Hands</em></h1>
+    <p class="fade-up fade-up-d2">Exceptional bread comes from generations of expertise, long fermentation, and the finest natural ingredients — baked fresh daily in Nairobi.</p>
+    <div class="hero-btns fade-up fade-up-d3">
+      <a href="products.html" class="btn-primary">Explore Our Breads</a>
+      <a href="wholesale.html" class="btn-secondary">Wholesale Inquiry</a>
     </div>
+  </div>
 </section>
 
-
-
+<!-- VIRTUES -->
 <section class="virtues">
-    <div class="container">
-        <div class="section-title">
-            <span>Our Commitment</span>
-            <h2>The Artisan Way</h2>
-        </div>
-        
-        <div class="virtues-grid">
-            <div class="virtue-card">
-                <i class="fas fa-seedling"></i>
-                <h3>Natural Ingredients</h3>
-                <p>We use only the finest natural ingredients, ensuring every loaf is free from artificial additives.</p>
-            </div>
-
-            <div class="virtue-card">
-                <i class="fas fa-clock"></i>
-                <h3>Long Fermentation</h3>
-                <p>Our dough is given the time it needs to develop deep flavors and superior texture through traditional fermentation.</p>
-            </div>
-
-            <div class="virtue-card">
-                <i class="fas fa-hand-holding-heart"></i>
-                <h3>Skilled Hands</h3>
-                <p>Generations of expertise guide our bakers in crafting each product with precision and care.</p>
-            </div>
-        </div>
+  <div class="virtues-header">
+    <span class="label">Our Commitment</span>
+    <h2 class="section-heading">The Artisan Way</h2>
+    <div class="divider center"></div>
+  </div>
+  <div class="virtues-grid">
+    <div class="virtue-card">
+      <div class="virtue-icon"><i class="fas fa-seedling"></i></div>
+      <h3>Natural Ingredients</h3>
+      <p>We use only the finest natural ingredients — every loaf is free from artificial additives and crafted with purpose.</p>
     </div>
+    <div class="virtue-card">
+      <div class="virtue-icon"><i class="fas fa-clock"></i></div>
+      <h3>Long Fermentation</h3>
+      <p>Our dough is given the time it needs to develop deep flavours and superior texture through traditional fermentation.</p>
+    </div>
+    <div class="virtue-card">
+      <div class="virtue-icon"><i class="fas fa-hand-holding-heart"></i></div>
+      <h3>Skilled Hands</h3>
+      <p>Generations of expertise guide our bakers in crafting each product with precision, care, and cultural pride.</p>
+    </div>
+  </div>
 </section>
 
-
-
+<!-- PRODUCTS PREVIEW -->
 <section class="products-preview">
-    <div class="container">
-        <div class="section-title">
-            <span>Freshly Baked Daily</span>
-            <h2>Our Signature Breads</h2>
-        </div>
-
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="img/arabic_bread.jpg" alt="Authentic Arabic Bread">
-                </div>
-                <div class="product-info">
-                    <h3>Arabic Bread</h3>
-                    <p>Traditional pita made with time-honoured Syrian techniques.</p>
-                    <a href="products.html" class="link-posh">View Details</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="img/frozen_croissant_dough.jpg" alt="Artisanal Sourdough">
-                </div>
-                <div class="product-info">
-                    <h3>Artisanal Sourdough</h3>
-                    <p>Crafted with a long fermentation process for deep, complex flavor.</p>
-                    <a href="products.html" class="link-posh">View Details</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="img/brioche_buns.jpg" alt="Gourmet Brioche Buns">
-                </div>
-                <div class="product-info">
-                    <h3>Brioche Buns</h3>
-                    <p>Rich, buttery buns perfect for gourmet burgers and sliders.</p>
-                    <a href="products.html" class="link-posh">View Details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="view-all-container">
-            <a href="products.html" class="btn-primary">View All Products</a>
-        </div>
+  <div class="container">
+    <div class="products-preview-header">
+      <div>
+        <span class="label">Freshly Baked Daily</span>
+        <h2 class="section-heading">Our Signature Breads</h2>
+      </div>
+      <a href="products.html" class="link-arrow">View All Products</a>
     </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/arabic_bread.jpg" alt="Authentic Arabic Bread">
+        </div>
+        <div class="product-info">
+          <h3>Arabic Bread</h3>
+          <p>Traditional pita made with time-honoured Syrian techniques. Perfect for dips and wraps.</p>
+          <a href="products.html" class="link-arrow">View Details</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/frozen_croissant_dough.jpg" alt="Artisanal Sourdough">
+        </div>
+        <div class="product-info">
+          <h3>Frozen croissant dough</h3>
+          <p>Crafted with a 24-hour fermentation process for deep, complex flavour and an open crumb.</p>
+          <a href="products.html" class="link-arrow">View Details</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/brioche_buns.jpg" alt="Gourmet Brioche Buns">
+        </div>
+        <div class="product-info">
+          <h3>Brioche Buns</h3>
+          <p>Rich, buttery, enriched buns — the premium choice for gourmet burgers and sliders.</p>
+          <a href="products.html" class="link-arrow">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- WHOLESALE CTA -->
+<section class="wholesale-cta">
+  <div class="wholesale-content">
+    <div class="wholesale-text">
+      <span class="label">B2B Partnerships</span>
+      <h2>Supply Your Business with Premium Artisanal Bread</h2>
+      <p>From gourmet brioche buns for burger boutiques to authentic Arabic bread for restaurants, we provide reliable daily supply across Nairobi.</p>
+      <ul class="wholesale-features">
+        <li><i class="fas fa-check"></i> Custom Supply Contracts</li>
+        <li><i class="fas fa-check"></i> Reliable Daily Delivery</li>
+        <li><i class="fas fa-check"></i> Consistent Premium Quality</li>
+        <li><i class="fas fa-check"></i> Flexible Ordering for B2B</li>
+      </ul>
+      <a href="wholesale.html" class="btn-primary">Become a Partner</a>
+    </div>
+    <div class="wholesale-image">
+      <img src="img/delivery.jpg" alt="The Bread House Delivery Supply">
+    </div>
+  </div>
+</section>
+
 </main>
 
-
-
-<section class="wholesale-cta">
-    <div class="wholesale-content">
-        <div class="wholesale-text">
-            <span>B2B Partnerships</span>
-            <h2>Supply Your Business with Premium Artisanal Bread</h2>
-            <p>From gourmet brioche buns for burger boutiques to authentic Arabic bread for restaurants, we provide reliable daily supply across Nairobi.</p>
-            <ul class="wholesale-features">
-                <li><i class="fas fa-check"></i> Custom Supply Contracts</li>
-                <li><i class="fas fa-check"></i> Reliable Daily Delivery</li>
-                <li><i class="fas fa-check"></i> Consistent Premium Quality</li>
-            </ul>
-            <a href="wholesale.html" class="btn-primary">Become a Partner</a>
-        </div>
-        <div class="wholesale-image">
-            <img src="img/delivery.jpg" alt="The Bread House Delivery Supply">
-        </div>
-    </div>
-</section>
-
+<!-- FOOTER -->
 <footer>
-    <div class="footer-container">
-        <div class="footer-brand">
-            <a href="index.html" class="logo-link">
-                <div class="logo-container">
-                    <img src="img/main-logo.png" alt="The Bread House Logo">
-                    <span class="brand-title">The Bread House</span>
-                </div>
-            </a>
-            <p>Syrian-inspired artisanal bakery dedicated to crafting premium bread.</p>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <img src="img/main-logo.png" alt="The Bread House Logo">
+          <span class="brand-title">The Bread House</span>
         </div>
-
-       <div class="footer-right-group">
-            <div class="footer-links">
-                <h4>The Bakery</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="story.html">Our Story</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="wholesale.html">Wholesale</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-
-
-        <div class="footer-contact">
-                <h4>Inquiries</h4>
-                <p><a href="mailto:alferdousbakeries@gmail.com" class="footer-link">alferdousbakeries@gmail.com</a></p>
-                <p><a href="tel:+254711254000" class="footer-link">+254 711 254 000</a></p>
-                
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/254711254000" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                </div>
-        </div>
-</div>
+      </a>
+      <p>Syrian-inspired artisanal bakery dedicated to crafting premium bread in the heart of Nairobi.</p>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 The Bread House by Al Ferdous Bakeries. All Rights Reserved.</p>
+    <div class="footer-col">
+      <h4>The Bakery</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wholesale.html">Wholesale</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </div>
+    <div class="footer-col">
+      <h4>Inquiries</h4>
+      <div class="footer-contact-item">
+        <a href="mailto:albreadhouse@gmail.com">albreadhouse@gmail.com</a>
+        <a href="tel:+254701143494">+254 701 143 494</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/254701143494" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 The Bread House by Al Ferdous Bakeries. All Rights Reserved.</p>
+  </div>
 </footer>
+
+<script src="main.js"></script>
 </body>
 </html>
